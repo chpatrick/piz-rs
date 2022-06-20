@@ -2,7 +2,7 @@ use std::fs::{self, File};
 use std::io;
 use std::path::PathBuf;
 
-use anyhow::*;
+use anyhow::{Context, Result};
 use log::*;
 use memmap::Mmap;
 use rayon::prelude::*;
