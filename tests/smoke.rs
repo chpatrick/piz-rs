@@ -3,7 +3,7 @@ use std::io;
 use std::path::Path;
 use std::process::Command;
 
-use anyhow::*;
+use anyhow::{Context, Result};
 use log::*;
 use memmap::Mmap;
 use rayon::prelude::*;
